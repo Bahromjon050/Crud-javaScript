@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+        <!-- CRUD OPERATIONS -->
+        <section class="dashboard">
+            <div class="dsh_operator">
+                <h1 class="dsh_h1"><span></span> CRUD OPERATIONS</h1>
+                <img src="./img/av_operat.png" alt="">
+                <h3>Karthi Madesh</h3>
+                <h4>Admin</h4>
+                <ul class="dsh_item">
+                    <li class="dsh_link">
+                        <a href="dashboard.html"><button>
+                            <span><img src="./icon/home.svg" alt=""></span>
+                            Home
+                        </button></a>
+                    </li>
+                    <li class="dsh_link">
+                        <a href=""><button>
+                            <span><img src="./icon/COUR.svg" alt=""></span>
+                            Course
+                        </button></a>
+                    </li>
+                    <li class="dsh_link">
+                        <a href=""><button>
+                            <span><img src="./icon/studen.svg" alt=""></span>
+                            Students
+                        </button></a>
+                    </li>
+                    <li class="dsh_link">
+                        <a href=""><button>
+                            <span><img src="./icon/payment1.svg" alt=""></span>
+                            Payment
+                        </button></a>
+                    </li>
+                    <li class="dsh_link">
+                        <a href=""><button>
+                            <span><img src="./icon/report.svg" alt=""></span>
+                            Report
+                        </button></a>
+                    </li>
+                    <li class="dsh_link">
+                        <a href=""><button>
+                            <span><img src="./icon/setting.svg" alt=""></span>
+                            Settings
+                        </button></a>
+                    </li>
+                    <li class="dsh_link quit">
+                        <a href="index.html"><button>
+                            Logout
+                            <span><img src="./icon/quit.svg" alt=""></span>
+                        </button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dsh_search">
+                <div class="dsh_search_header">
+                    <div class="search_img">
+                        <img src="./icon/play.svg" alt="">
+                    </div>
+                    <div class="search_input">
+                        <input type="text" placeholder="Search..." class="search">
+                        <img src="./icon/lupa.svg" alt="" class="inp_img" type="reset">
+                        <img src="./icon/bell.svg" alt="" class="bell">
+                    </div>
+                </div>
+                <div class="student_List">
+                    <div class="list_header">
+                        <h2 class="list_h2">Students List</h2>
+                        <div class="list_img">
+                            <img src="./icon/yq_ps.svg" alt="">
+                            <button class="add_new">ADD NEW STUDENT</button>
+                        </div>
+                    </div>
+                    <div class="list_body">
+                        <div class="admission">
+                            <h4 class="ad_name1 ad_p">Name</h4>
+                            <h4 class="ad_name2 ad_p">Email</h4>
+                            <h4 class="ad_name3 ad_p">Phone</h4>
+                            <h4 class="ad_name4 ad_p">Enroll Number</h4>
+                            <h4 class="ad_name5 ad_p">Date of admission</h4>
+                        </div>
+                        <div class="profils">
+                            <div class="profil" id="profillist">
+                                
+                            </div>
+                        </div>
+                        <div class="modal_add">
+                            <div class="add_body">
+                                <form action="" method="post" class="form">
+                                    <h1 class="add_b_h1"><span></span><b class="modalb">ADD STUDENT</b></h1>
+                                    <h5 class="add_1">Name</h5>
+                                    <input type="text" class="inputs" name="name" placeholder="Enter your name">
+                                    <h5 class="add_2">Phone</h5>
+                                    <input type="tel" class="inputs" name="phone" placeholder="Enter your phone">
+                                    <h5 class="add_3">Email</h5>
+                                    <input type="email" class="inputs" name="email" placeholder="Enter your email">
+                                    <h5 class="add_4">more</h5>
+                                    <input type="number" class="inputs" name="number" placeholder="Enter your more">
+                                    <h5 class="add_5">data</h5>
+                                    <input type="date" class="inputs" name="data" placeholder="Enter your data">
+                                    <button class="add_btn">Add</button>
+                                </form>
+                                <button class="add_close">X</button>
+                                <div class="add_data">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert_like">
+                            <div class=""><img src="./icon/like.svg" alt=""></div>
+                            <div class="">
+                                <h4>Successfully</h4>
+                                <h5>completed</h5>
+                            </div>
+                            <div class=""><button class="likex"><img src="./icon/X.svg" alt=""></button></div>
+                        </div>
+                        <div class="alert_dis">
+                            <div class=""><img src="./icon/dislike.svg" alt=""></div>
+                            <div class="">
+                                <h4>Account</h4>
+                                <h5>deleted</h5>
+                            </div>
+                            <div class=""><button class="disx"><img src="./icon/X.svg" alt=""></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+<script src="Js/main.js"></script>
+</html>
