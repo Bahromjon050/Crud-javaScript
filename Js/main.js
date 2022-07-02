@@ -176,7 +176,7 @@ inputs.forEach((btn) => {
 // DELETE
 function deleteStorange(i){
     console.log(DataStorange.slice(i,i+1));
-    localStorage.setItem('data', JSON.stringify([...DataStorange.slice(0,i), ...DataStorange.slice(i+1, DataStorange.length)]));
+    localStorage.setItem('data', JSON.stringify(DataStorange.filter((val, index) => index !== i);
     localStorageData();
     dislike();
 }
